@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Parkinsans:wght@500&family=Playwrite+CL+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #1d1d1d;
+    --cor2: #ffb612;
+    --cor3: #fbba00;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(255, 240, 210);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Parkinsans", serif;
+    padding: 10px 0px;
+}
+
+.logo-text {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   cursor: pointer;
+   gap: 10px;
+}
+
+.image-logo {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: var(--cor3);
+}
+
+#nave {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0px 10px 0px 0px;
+}
+
+.listas-geral {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.link-li {
+    text-decoration: none;
+    color: var(--cor1);
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.link-li:hover {
+    background-color: rgb(151, 151, 151);
+    border-radius: 15px;
+}
+
+#celular-bars {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 930px) {
+
+     h1 {
+        font-size: 1.8em;
+    }
+
+    .image-logo {
+        width: 65px;
+        height: 65px;
+    }
+
+    .lista {
+        font-size: .9em;
+    }
+
+}
+
+
+    
+@media screen and (max-width: 870px) {
+    #nave {
+        display: none;
+    }
+
+    #celular-bars {
+        display: block;
+        font-size: 1.5em;
+        color: var(--cor1);
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .image-logo {
+        width: 60px;
+        height: 60px;
+    }
+} 
+
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 80px 0px;
+}
+
+h2 {
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+    font-size: 4.5em;
+    width: 70%;
+    color: var(--cor1);
+}
+
+h2 span {
+    color: var(--cor3);
+}
+
+.submit {
+    width: 40%;
+    background-color: var(--cor2);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: var(--cor1);
+    font-family: "Poppins", serif;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit:hover {
+    background-color: rgb(255, 145, 0);
+    box-shadow: 1px 1px 3px #1d1d1d;
+}
+
+
+
+@media screen and (max-width: 1130px) {
+    h2 {
+        font-size: 4.3em;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    h2 {
+        font-size: 3em;
+        width: 80%;
+    }
+
+    .submit {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 675px)  {
+    h2 {
+        font-size: 2.667em;
+        width: 100%;
+    }
+}
+
+.content-quadrado {
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px 60px;
+    align-items: center;
+    color: var(--cor1);
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    gap: 35px;
+    background-color: rgb(255, 240, 210);
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 1px 0px 4px #e3e4e6;
+    gap: 15px;
+    padding: 10px;
+    width: 25%;
+}
+
+.cartao p {
+    font-size: .9em;
+}
+
+.cartao-promocional {
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(59, 59, 64);
+    border-radius: 20px;
+    box-shadow: 1px 0px 4px #e3e4e6;
+    gap: 15px;
+    padding: 10px;
+    width: 25%;
+    color: white;
+    
+}
+
+.cartao-promocional p {
+    font-size: .9em;
+}
+
+.cartao-promocional .fidelidade {
+    font-size: .9em;
+}
+
+.cartao-promocional h3 {
+    color: var(--cor2);
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+.paragrafo {
+   text-transform: uppercase;
+}
+
+.price {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.primeiro-mes {
+    font-weight: 600;
+}
+
+.cartao .fidelidade {
+    font-size: .9em;
+}
+
+.btn-preço {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--cor1);
+    background-color: var(--cor2);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-preço:hover {
+    background-color: rgb(255, 145, 0);
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px;
+}
+
+.listas i {
+    color: green;
+    font-size: 1.1em;
+}
+
+
+#circle1, #circle2, #circle3, #circle4, #circle5 {
+    color: var(--cor1);
+}
+
+#circle6, #circle7, #circle8 {
+    color: white;
+}
+
+.lista {
+    list-style: none;
+    font-weight: 500;
+    font-size: .9em;
+    align-items: center;
+}
+
+.cartao-promocional del {
+    color: #d1d1d1;
+}
+
+del {
+    color: rgb(102, 98, 98);
+}
+
+
+footer {
+    background-color: rgb(255, 240, 210);
+    padding: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+footer p {
+    font-family: "Parkinsans", serif;
+    font-size: .5789em;
+    color: var(--cor1);
+    font-weight: 300;
+    width: 80%;
+}
+
+@media screen and (max-width: 1205px) {
+    .content-quadrado {
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+
+    .cartao {
+        width: calc(50% - 35px);
+    }
+
+    .cartao-promocional {
+        width: calc(50% - 35px);
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .cartao, .cartao-promocional {
+        width: 97%;
+    }
+
+    footer p {
+        width: 100%;
+        font-size: .5em;
+    }   
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
